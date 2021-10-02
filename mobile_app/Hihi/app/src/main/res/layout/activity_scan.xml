@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScanActivity"
+    android:background="@color/dark_blue">
+
+    <com.budiyev.android.codescanner.CodeScannerView
+        android:id="@+id/scannerView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+
+        app:autoFocusButtonColor="@android:color/white"
+        app:autoFocusButtonVisible="true"
+
+        app:flashButtonColor="@android:color/white"
+        app:flashButtonVisible="true"
+
+        app:maskColor="#A1000000" />
+
+    <TextView
+        android:id="@+id/scanValue"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scannerView"
+        android:textColor="@color/light_teal"
+        android:layout_centerHorizontal="true"
+        android:text="@string/btnToScanAct"
+        android:textSize="20dp"
+        />
+
+    <Button
+        android:id="@+id/btnJoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/scanValue"
+        android:visibility="gone"
+        android:text="@string/join"
+        android:backgroundTint="@color/dark_teal"
+        android:textColor="@color/lighter_dark_blue"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Hihi</string>
+    <string name="btnToScanAct">scan code</string>
+    <string name="join">join game</string>
+</resources>
